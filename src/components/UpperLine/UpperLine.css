@@ -1,0 +1,40 @@
+.upperLine {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-direction: row;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    padding-left: 86px;
+    padding-right: 96px;
+    position: absolute;
+    z-index: 2;
+    /* background-color: blue; */
+}
+
+.upperLine_name {
+    font-family: Michroma;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+}
+
+.upperLine_pagetitle {
+    color: #00FF11;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+.upperLine_button {
+    background: 0;
+    /* box-shadow: 0; */
+    border: 0;
+    /* margin-left: auto; */
+    padding: 0;
+    width: fit-content;
+    margin: 0;
+}

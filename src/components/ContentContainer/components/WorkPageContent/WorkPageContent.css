@@ -1,0 +1,45 @@
+
+.workPageContent {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    scroll-behavior: auto;
+}
+
+.workPageContent_horizontalScroll {
+    padding-top: 120px;
+    margin-left: 128px;
+    margin-right: 128px;
+    height: 100vh;
+    width: fit-content;
+    background-color: #22232E;
+}
+
+.workPageContent_firstRow {
+    display: flex;
+    gap: 1208px;
+    height: 200px;
+    align-items: flex-start;
+}
+
+.workPageContent_secondRow {
+    display: flex;
+    gap: 1200px;
+    margin-left: 871px;
+    height: 200px;
+    align-items: center;
+}
+
+.workPageContent_thirdRow {
+    display: flex;
+    gap: 1208px;
+    margin-left: 346px;
+    height: 200px;
+    align-items: flex-end;
+}
+
+img {
+    height: auto;
+    width: fit-content;
+    box-shadow: 9px 4px 38px rgba(6.26, 6, 7, 0.48);
+}
