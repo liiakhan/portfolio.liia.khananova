@@ -1,8 +1,10 @@
 import ArrowSquare from '../icons/ArrowSquare';
 import './UpperLine.css'
+import { useSearchParams } from "react-router-dom";
 
 function UpperLine({ setIsNavOpen }) {
-
+  const [searchParams, setSearchParams] = useSearchParams();
+  const pageName = searchParams.get("pageName");
   const openNav = () => {
     setIsNavOpen(true)
   } 
@@ -14,7 +16,7 @@ function UpperLine({ setIsNavOpen }) {
                 Liia Khananova
             </p>
             <h3 className="upperLine_pagetitle">
-                <em>Home</em>
+                <em>{pageName}</em>
             </h3>
 
         </div>
