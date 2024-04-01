@@ -2,16 +2,18 @@ import './ContentContainer.css'
 import HomePageContent from './components/HomePageContent/HomePageContent'
 import WorkPageContent from './components/WorkPageContent/WorkPageContent'
 import ProjectPageContent from './components/ProjectPageContent/ProjectPageContent'
-import { useState } from 'react'
+import { useSearchParams } from "react-router-dom";
 
 
-function ContentContainer ({pageName}) {
+function ContentContainer () {
+    const [searchParams, setSearchParams] = useSearchParams();
+    const pageName = searchParams.get("pageName");
 
     return (
         <div className="contentContainer">
-            {/* { pageName === 'home' && <HomePageContent />}
-            { pageName === 'work' && <WorkPageContent />} */}
-             <ProjectPageContent selectedProjectName />
+            {pageName === 'Home' && <HomePageContent />}
+            {pageName === 'Work' && <WorkPageContent />}
+            {pageName === 'Projects' && <ProjectPageContent selectedProjectName />}
         </div>
     ) 
 }
