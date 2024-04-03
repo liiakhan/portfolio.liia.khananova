@@ -21,7 +21,7 @@ function UpperLine({ setIsNavOpen }) {
 
         </div>
 
-        <button className="upperLine_button" onClick={openNav}>
+        <button className="upperLine_button" id="upperLine_button" onClick={openNav}>
          <ArrowSquare />
         </button>
     </div>

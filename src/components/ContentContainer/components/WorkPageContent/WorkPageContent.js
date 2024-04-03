@@ -1,24 +1,44 @@
 import './WorkPageContent.css'
+import {projectsData} from './projectsData'
+import { useSearchParams } from "react-router-dom";
 
 function WorkPageContent () {
+    const [searchParams, setSearchParams] = useSearchParams();
+
+    const selectProject = (ev) => {
+    const projectName = ev.currentTarget.dataset.projectName
+    setSearchParams(params => {
+        params.set("projectName", projectName);
+        params.set("pageName", 'Projects');
+        return params;
+    });
+
+    }
+
     return (
         <div className='workPageContent'>
             <div className='workPageContent_horizontalScroll'>
-                <div className='workPageContent_firstRow'>
-                    <img src='https://picsum.photos/400?random=1'></img>
-                    <img src='https://picsum.photos/400?random=2'></img>
-                    <img src='https://picsum.photos/400?random=3'></img>
-                </div>
-                <div className='workPageContent_secondRow'>
-                    <img src='https://picsum.photos/400?random=4'></img>
-                    <img src='https://picsum.photos/400?random=5'></img>
-                    <img src='https://picsum.photos/400?random=6'></img>
-                </div>
-                <div className='workPageContent_thirdRow'>
-                    <img src='https://picsum.photos/400?random=7'></img>
-                    <img src='https://picsum.photos/400?random=8'></img>
-                    <img src='https://picsum.photos/400?random=9'></img>
-                </div>
+                {Object.keys(projectsData).map(key => {
+                    const {
+                        imageWidth,
+                        imageHeight,
+                        imageAlt,
+                        imageLeft,
+                        imageTop,
+                        imageSrc,
+                        containerWidth
+                    } = projectsData[key]
+                    return (
+                    <div className='flexItem' style={{height: containerWidth}}>
+                        <div style={{width: imageWidth, height: imageHeight, right: imageTop, top: imageLeft, position: 'absolute' }}
+                        onClick={selectProject}
+                        data-project-name={key}
+                        >
+                            <img src={imageSrc} alt={imageAlt} className='img'></img>
+                        </div>   
+                    </div>
+                    )
+                })}
             </div>
         </div>
     )

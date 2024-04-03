@@ -1,45 +1,38 @@
 
 .workPageContent {
-    display: flex;
-    flex-direction: column;
     width: 100vw;
-    scroll-behavior: auto;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .workPageContent_horizontalScroll {
-    padding-top: 120px;
-    margin-left: 128px;
-    margin-right: 128px;
-    height: 100vh;
-    width: fit-content;
+    height: 100vw;
+    width: 100vh;
     background-color: #22232E;
-}
-
-.workPageContent_firstRow {
+    position: relative;
     display: flex;
-    gap: 1208px;
-    height: 200px;
-    align-items: flex-start;
-}
-
-.workPageContent_secondRow {
-    display: flex;
-    gap: 1200px;
-    margin-left: 871px;
-    height: 200px;
-    align-items: center;
-}
-
-.workPageContent_thirdRow {
-    display: flex;
-    gap: 1208px;
-    margin-left: 346px;
-    height: 200px;
+    flex-direction: column;
     align-items: flex-end;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translate(0, 100vh);
+    transform-origin: 0 100vh;
 }
 
-img {
-    height: auto;
-    width: fit-content;
+.workPageContent_horizontalScroll::-webkit-scrollbar {
+    display: none;
+  }
+
+.img {
+    width: 100%;
+    height: 100%;
     box-shadow: 9px 4px 38px rgba(6.26, 6, 7, 0.48);
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.flexItem {
+    width: 100vh;
+    position: relative;
+    flex-shrink: 0;
 }

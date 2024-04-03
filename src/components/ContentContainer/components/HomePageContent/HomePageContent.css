@@ -3,7 +3,7 @@
     width: 100%;
     background-color:azure;
     position: relative;
-
+    overflow: hidden;
 }
 
 .homePageContent_backgroundVideo {
@@ -76,7 +76,6 @@
     z-index: 1;
     top: 0;
     left: 0;
-    /* object-fit: cover; */
     background: linear-gradient(339deg, #000000 26%, #00000000 48%), linear-gradient(90deg, #17161c00 37%, #000000 100%), linear-gradient(0deg, #17161c99 0%, #17161c99 100%);
 
 }

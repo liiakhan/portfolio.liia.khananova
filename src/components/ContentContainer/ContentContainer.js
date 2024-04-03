@@ -8,12 +8,13 @@ import { useSearchParams } from "react-router-dom";
 function ContentContainer () {
     const [searchParams, setSearchParams] = useSearchParams();
     const pageName = searchParams.get("pageName");
+    const projectName = searchParams.get("projectName");
 
     return (
         <div className="contentContainer">
             {pageName === 'Home' && <HomePageContent />}
             {pageName === 'Work' && <WorkPageContent />}
-            {pageName === 'Projects' && <ProjectPageContent selectedProjectName />}
+            {pageName === 'Projects' &&  <ProjectPageContent />}
         </div>
     ) 
 }
