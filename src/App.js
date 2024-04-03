@@ -4,11 +4,23 @@ import UpperLine from './components/UpperLine/UpperLine';
 import SlideoutMenu from './components/SlideoutMenu/SlideoutMenu';
 import React, { useState, useEffect } from 'react';
 import PopOver from './components/PopOver/PopOver';
+import { useSearchParams } from "react-router-dom";
 
 function App() {
   const [ isNavOpen, setIsNavOpen ] = useState(false)
   const [ isPopOverOpen, setIsPopOverOpen ] = useState(false)
-  const [ pageName, setPageName ] = useState('home')
+  const [searchParams, setSearchParams] = useSearchParams();
+  
+  useEffect(() => {
+  const pageName = searchParams.get("pageName");
+  if(!pageName) {
+    setSearchParams(params => {
+      params.set("pageName", 'Home');
+      return params;
+    });
+  }
+  }, [searchParams, setSearchParams])
+
 
 useEffect(() => {
   const slideOutElement = document.querySelector('#slide-out-menu')
@@ -34,11 +46,10 @@ useEffect(() => {
   return (
     <div className="App">
       <UpperLine setIsNavOpen={setIsNavOpen} />
-      <ContentContainer pageName={pageName} />
+      <ContentContainer/>
       <SlideoutMenu 
         isNavOpen={isNavOpen} 
         setIsNavOpen={setIsNavOpen} 
-        setPageName={setPageName}
         setIsPopOverOpen={setIsPopOverOpen}
       />
       { isPopOverOpen && <PopOver setIsPopOverOpen={setIsPopOverOpen} /> }
