@@ -20,7 +20,7 @@ function SlideoutMenu ({ isNavOpen, setIsNavOpen }) {
     }
 
     return (
-        <div className={isNavOpen ? 'slideoutMenu_navigationBox' : 'slideoutMenu_closed'}>
+        <div className={isNavOpen ? 'slideoutMenu_navigationBox' : 'slideoutMenu_closed'} id="slide-out-menu">
             <div className="slideoutMenu_navigationItems">
                 <button className={pageName === 'Home' ? 'slideoutMenu_item_selected': 'slideoutMenu_item'} data-name='Home' onClick={changePageName}>Home</button>
                 <button className={pageName === 'Work' ? 'slideoutMenu_item_selected': 'slideoutMenu_item'} data-name='Work' onClick={changePageName}>Work</button>
