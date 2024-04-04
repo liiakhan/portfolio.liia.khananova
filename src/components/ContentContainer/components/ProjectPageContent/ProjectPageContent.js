@@ -52,8 +52,12 @@ function ProjectPageContent () {
             <div className='projectPageContent_footer'>
                 <div className='projectPageContent_verticalContainer'>
                     <span className='projectPageContent_footerTitle'>Contacts</span>
-                    <span className='projectPageContent_footerText'>khananova.liia@gmail.com</span>
-                    <span className='projectPageContent_footerText'>+420 775 639 564</span>
+                    <a className='projectPageContent_footerText' href="mailto:khananova.liia@gmail.com">
+                        khananova.liia@gmail.com
+                    </a>
+                    <a className='projectPageContent_footerText' href="tel:+420775639564">
+                        +420 775 639 564
+                    </a>
                 </div>
                 <div className='projectPageContent_verticalContainer'>
                     <span  className='projectPageContent_footerTitle'>Find more on</span>
@@ -64,7 +68,7 @@ function ProjectPageContent () {
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.875 11.25H20.625V16.5331H15.375V17.625H18.4035V19.125H13.875V11.25ZM15.375 15.0331H19.125V12.75H15.375V15.0331Z" fill="#D8D8D8"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7812 10.125L14.625 10.125L14.625 8.625L19.7812 8.625L19.7812 10.125Z" fill="#070706"/>
                         </svg>
-                        <span className='projectPageContent_footerText ml'>Liia Khananova</span>
+                        <a className='projectPageContent_footerText ml' href='https://www.behance.net/liiakhananova'>Liia Khananova</a>
                     </div>
                     <div className='projectPageContent_horizontalContainer'>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +76,7 @@ function ProjectPageContent () {
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.125 10.875L10.875 10.875L10.875 13.125L13.125 13.125L13.125 10.875ZM9.375 9.375L9.375 14.625L14.625 14.625L14.625 9.375L9.375 9.375Z" fill="#D8D8D8"/>
                             <path d="M14.625 7.125H16.125V8.625H14.625V7.125Z" fill="#D8D8D8"/>
                         </svg>
-                        <span className='projectPageContent_footerText ml'>@liia.graphic.designer</span>
+                        <a className='projectPageContent_footerText ml' href='https://www.instagram.com/liia.graphic.designer/'>@liia.graphic.designer</a>
                     </div>
                 </div>
             </div>  
