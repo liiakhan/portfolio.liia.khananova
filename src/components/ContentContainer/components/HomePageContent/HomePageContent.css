@@ -56,11 +56,12 @@
     border-right: 4px solid #00FF11;
     text-align: right;
     color: aliceblue;
-    /* width: 453px; */
+    font-family: "Mukta", sans-serif;
+    font-size: 20px;
 }
 
 .homePageContent_heading {
-    font-family: Michroma;
+    font-family: "Mukta", sans-serif;
     font-size: 48px;
     line-height: 93%;
     text-align: right;
@@ -112,7 +113,7 @@
         position: relative;
         border: 14px solid #00FF11;
         box-sizing: border-box;
-        height: calc(100vh - 360px);
+        height: calc(100vh - 300px);
         width: calc(100vw - 32px);
         overflow: hidden;
     }
@@ -126,5 +127,21 @@
         left: 0;
         background-color: #22232E;
     
+    }
+    .homePageContent_heading {
+        font-family: "Mukta", sans-serif;
+        font-size: 40px;
+        line-height: 93%;
+        text-align: right;
+        color: aliceblue;
+        margin: 0 0 16px 0;
+    }
+    .homePageContent_borderRight {
+        font-family: "Mukta", sans-serif;
+        font-size: 14px;
+        padding-right: 16px;
+    }
+    .homePageContent_textBlock {
+        width: calc(100vw - 32px);
     }
 }
