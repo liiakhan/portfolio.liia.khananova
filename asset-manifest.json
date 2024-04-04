@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio.liia.khananova/static/css/main.bfd0a481.css",
+    "main.css": "/portfolio.liia.khananova/static/css/main.f7103183.css",
     "main.js": "/portfolio.liia.khananova/static/js/main.e15c1610.js",
     "static/media/IMG_5527.mp4": "/portfolio.liia.khananova/static/media/IMG_5527.98090729660304649344.mp4",
     "index.html": "/portfolio.liia.khananova/index.html",
-    "main.bfd0a481.css.map": "/portfolio.liia.khananova/static/css/main.bfd0a481.css.map",
+    "main.f7103183.css.map": "/portfolio.liia.khananova/static/css/main.f7103183.css.map",
     "main.e15c1610.js.map": "/portfolio.liia.khananova/static/js/main.e15c1610.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfd0a481.css",
+    "static/css/main.f7103183.css",
     "static/js/main.e15c1610.js"
   ]
 }
