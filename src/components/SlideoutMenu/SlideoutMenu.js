@@ -2,7 +2,7 @@ import ArrowSquare from '../icons/ArrowSquare';
 import './SlideoutMenu.css';
 import { useSearchParams } from "react-router-dom";
 
-function SlideoutMenu ({ isNavOpen, setIsNavOpen }) {
+function SlideoutMenu ({ isNavOpen, setIsNavOpen, setIsPopOverOpen, isPopOverOpen }) {
     const [searchParams, setSearchParams] = useSearchParams();
     const pageName = searchParams.get("pageName");
 
@@ -24,7 +24,7 @@ function SlideoutMenu ({ isNavOpen, setIsNavOpen }) {
             <div className="slideoutMenu_navigationItems">
                 <button className={pageName === 'Home' ? 'slideoutMenu_item_selected': 'slideoutMenu_item'} data-name='Home' onClick={changePageName}>Home</button>
                 <button className={pageName === 'Work' ? 'slideoutMenu_item_selected': 'slideoutMenu_item'} data-name='Work' onClick={changePageName}>Work</button>
-                <button className={pageName === 'Projects' ? 'slideoutMenu_item_selected': 'slideoutMenu_item'} data-name='Projects' onClick={changePageName}>Projects</button>
+                <button className={isPopOverOpen ? 'slideoutMenu_item_selected': 'slideoutMenu_item'} onClick={() => setIsPopOverOpen(true)}>Start project</button>
             </div>
 
             <button className='slideoutMenu_button' onClick={closeNav}>

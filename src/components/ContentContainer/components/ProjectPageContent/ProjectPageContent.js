@@ -14,9 +14,9 @@ function ProjectPageContent () {
         body,
     } = projectsData[projectName].pageSettings
     return (
-        <div className='projectPageContent' styles={{backgroundImage: `url('${headerImgSrc}')`}}>
+        <div className='projectPageContent' >
 
-            <header className='projectPageContent_header'>
+            <header className='projectPageContent_header' style={{ backgroundImage: `url('${headerImgSrc}')` }}>
                 <p className='projectPageContent_subtitle'>{designType}</p>
                 <h1 className='projectPageContent_title'>{name}</h1>
             </header>
