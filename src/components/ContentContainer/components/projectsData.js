@@ -5,11 +5,11 @@ export const projectsData = {
             designType: 'editorial',
             name: 'Seasons of Life',
             headerImgSrc: 'https://picsum.photos/400?random=1',
-            explaining: 'Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exent, Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exent, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exent. ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exent.',
+            explaining: '@poets_ua is an Instagram community, called to increase the awareness of modern Ukrainian poetry. Not only they are promoting it through the internet, but also publish books with chosen creations. This project was their second general book publishing, which was planned to be sold for gathering money for Ukrainian Armed Forces.The main tasks were to create a cover and the insight structure of the book.',
             body: [
                 {
-                    text: 'Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exent, Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exent, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exent. ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exent.',
-                    imageSrc: 'https://picsum.photos/400?random=2',
+                    text: 'To represent the main topics of the book I created two concepts. The FIrst one was based on one-line illustrations, connected to the rout of a person throughout life. The second one had a more abstract approach, based on form and color.',
+                    imageSrc: 'media/editorialSeasonsFirst.png',
                     isImageFirst: true,
                 },
                 {
