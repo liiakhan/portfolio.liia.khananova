@@ -79,3 +79,52 @@
     background: linear-gradient(339deg, #000000 26%, #00000000 48%), linear-gradient(90deg, #17161c00 37%, #000000 100%), linear-gradient(0deg, #17161c99 0%, #17161c99 100%);
 
 }
+
+
+@media (max-width: 390px) {
+    .homePageContent {
+        padding: 16px;
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+    .homePageContent_backgroundVideo {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    .homePageContent_contentContainer {
+                display: flex;
+                flex-direction: column;
+/* overflow: hidden; */
+        position: absolute;
+        box-sizing: border-box;
+        top: 70px;
+        left: 0;
+        right: 0;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 5;
+        width: 100vw;
+        height: calc(100vh - 100px);
+    }
+    .homePageContent_videoBlock {
+        position: relative;
+        border: 14px solid #00FF11;
+        box-sizing: border-box;
+        height: calc(100vh - 360px);
+        width: calc(100vw - 32px);
+        overflow: hidden;
+    }
+    .homePageContent_graddient {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #22232E;
+    
+    }
+}

@@ -16,18 +16,22 @@
 }
 
 .upperLine_name {
-    font-family: Michroma;
+    font-family: "Mukta", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
     color: #fff;
     text-align: left;
     margin: 0;
+    line-height: 22px;
 }
 
 .upperLine_pagetitle {
     color: #00FF11;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Mukta", sans-serif;
     text-align: left;
     font-size: 16px;
     margin: 0;
+    line-height: 18px;
 }
 
 
@@ -44,4 +48,20 @@
     font-size: 15px;
     line-height: 15px;
     cursor: pointer;
+}
+
+@media (max-width: 390px) {
+    .upperLine {
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        box-sizing: border-box;
+        flex-direction: row;
+        padding: 16px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        /* background-color: blue; */
+    }
 }

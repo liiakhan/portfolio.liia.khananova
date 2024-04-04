@@ -9,11 +9,13 @@ function UpperLine({ setIsNavOpen }) {
     setIsNavOpen(true)
   } 
 
+  const isSmall = window.innerWidth <= 390
+
   return (
     <div className="upperLine">
       <div className="upperLine_textConteiner">
             <p className="upperLine_name">
-                Liia Khananova
+                {isSmall ? 'L.K' : 'Liia Khananova'} 
             </p>
             <h3 className="upperLine_pagetitle">
                 <em>{pageName}</em>
@@ -22,7 +24,7 @@ function UpperLine({ setIsNavOpen }) {
         </div>
 
         <button className="upperLine_button" id="upperLine_button" onClick={openNav}>
-         <ArrowSquare />
+         <ArrowSquare size={isSmall ? 32 : 64}/>
         </button>
     </div>
   );

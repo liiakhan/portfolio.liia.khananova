@@ -51,6 +51,7 @@ useEffect(() => {
         isNavOpen={isNavOpen} 
         setIsNavOpen={setIsNavOpen} 
         setIsPopOverOpen={setIsPopOverOpen}
+        isPopOverOpen={isPopOverOpen}
       />
       { isPopOverOpen && <PopOver setIsPopOverOpen={setIsPopOverOpen} /> }
     </div>
