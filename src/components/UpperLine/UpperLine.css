@@ -12,7 +12,8 @@
     top: 0;
     left: 0;
     z-index: 2;
-    /* background-color: blue; */
+    background: linear-gradient(0deg, rgba(34, 35, 46, 0.00) 0%, rgba(34, 35, 46, 0.71) 18.22%, rgba(34, 35, 46, 0.71) 72.22%);
+
 }
 
 .upperLine_name {
