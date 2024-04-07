@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio.liia.khananova/static/css/main.80ec5806.css",
+    "main.css": "/portfolio.liia.khananova/static/css/main.b12fd830.css",
     "main.js": "/portfolio.liia.khananova/static/js/main.9cc6e10e.js",
     "static/media/IMG_5527.mp4": "/portfolio.liia.khananova/static/media/IMG_5527.98090729660304649344.mp4",
     "static/media/editorialSeasonsCover.png": "/portfolio.liia.khananova/static/media/editorialSeasonsCover.3b24eda569535ecb5ca5.png",
     "static/media/editorialSeasonsThird.png": "/portfolio.liia.khananova/static/media/editorialSeasonsThird.cae007202cfd7df78ba2.png",
     "static/media/editorialSeasonsFirst.png": "/portfolio.liia.khananova/static/media/editorialSeasonsFirst.0944b8edf636520374c8.png",
     "index.html": "/portfolio.liia.khananova/index.html",
-    "main.80ec5806.css.map": "/portfolio.liia.khananova/static/css/main.80ec5806.css.map",
+    "main.b12fd830.css.map": "/portfolio.liia.khananova/static/css/main.b12fd830.css.map",
     "main.9cc6e10e.js.map": "/portfolio.liia.khananova/static/js/main.9cc6e10e.js.map"
   },
   "entrypoints": [
-    "static/css/main.80ec5806.css",
+    "static/css/main.b12fd830.css",
     "static/js/main.9cc6e10e.js"
   ]
 }
