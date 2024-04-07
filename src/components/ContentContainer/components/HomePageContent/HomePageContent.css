@@ -76,8 +76,8 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background: linear-gradient(339deg, #000000 26%, #00000000 48%), linear-gradient(90deg, #17161c00 37%, #000000 100%), linear-gradient(0deg, #17161c99 0%, #17161c99 100%);
-
+    /* background: linear-gradient(339deg, #000000 26%, #00000000 48%), linear-gradient(90deg, #17161c00 37%, #000000 100%), linear-gradient(0deg, #17161c99 0%, #17161c99 100%); */
+    background: linear-gradient(0deg, rgba(34, 35, 46, 0.60) 0%, rgba(34, 35, 46, 0.60) 100%), linear-gradient(90deg, rgba(34, 35, 46, 0.00) 18.83%, #22232E 51.17%), linear-gradient(339deg, #22232E 27.27%, rgba(34, 35, 46, 0.00) 48.94%);
 }
 
 
