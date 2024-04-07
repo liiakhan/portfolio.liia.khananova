@@ -16,7 +16,9 @@ function ProjectPageContent () {
     return (
         <div className='projectPageContent' >
 
-            <header className='projectPageContent_header' style={{ backgroundImage: `url('${headerImgSrc}')` }}>
+            <header className='projectPageContent_header' style={{
+                  background: `linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%), url('${headerImgSrc}'), lightgray 50% / cover no-repeat`
+                   }}>
                 <p className='projectPageContent_subtitle'>{designType}</p>
                 <h1 className='projectPageContent_title'>{name}</h1>
             </header>
