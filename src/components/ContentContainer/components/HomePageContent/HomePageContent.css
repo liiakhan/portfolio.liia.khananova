@@ -86,7 +86,7 @@
     .homePageContent {
         padding: 16px;
         width: 100vw;
-        height: 100svh;
+        height: 100vh;
         box-sizing: border-box;
     }
     .homePageContent_backgroundVideo {

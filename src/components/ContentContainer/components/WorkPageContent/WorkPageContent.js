@@ -43,7 +43,7 @@ function WorkPageContent () {
             setLastScrollDistance(ref.current.scrollTop)
         }
         setTimeout(() => {
-            setLastScrollDistance(isScrolledToLeft ? ref.current.scrollTop + 1 : ref.current.scrollTop - 1)
+            setLastScrollDistance(isScrolledToLeft ? ref.current?.scrollTop + 1 : ref.current?.scrollTop - 1)
         }, 35)
     }, [wasScrolled, isScrolledToLeft, lastScrollDistance])
 
