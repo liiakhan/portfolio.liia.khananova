@@ -20,7 +20,9 @@
 }
 
 .projectPageContent_subtitle {
-    color: #fff;
+    color: #00FF11;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .projectPageContent_title {
@@ -55,6 +57,7 @@
     font-family: "Mukta", sans-serif;
     font-size: 20px;
     font-weight: 600;
+    line-height: 30px;
 }
 .projectPageContent_detailUnEvent {
     display: flex;
@@ -85,6 +88,7 @@
     width: 100%;
     background-color: #1A1A1B;
     margin-bottom: -16px;
+    margin-top: 32px;
     color: #D8D8D8;
     font-family: "Mukta", sans-serif;
     padding: 30px 0 64px 30px;
@@ -119,4 +123,82 @@
 
 .ml {
     margin-left: 8px;
+}
+
+@media (max-width: 390px) {
+    .projectPageContent_header {
+        padding: 64px 16px 16px 16px;
+        height: 243px;
+    }
+    
+    .projectPageContent_title {
+        color: #fff;
+        font-family: Michroma;
+        line-height: 93%;
+        font-size: 32px;
+        font-weight: 400;
+        margin: 0;
+        text-align: left;
+    }
+    .projectPageContent_text {
+        column-count: 1;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .projectPageContent_explainingBlock {
+        background-color: #1A1A1B;
+        height: fit-content;
+        margin: 0;
+        padding: 32px 16px;
+    }
+    .projectPageContent_detailUnEvent {
+        padding: 16px;
+        flex-direction: column;
+    }
+    
+    .projectPageContent_smallText {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .projectPageContent_leftImage {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .projectPageContent_rightImage {
+        width: 100%;
+        margin-left: 0;
+    }
+    .text_first {
+        flex-direction: column-reverse;
+    }
+
+    .projectPageContent_footer {
+        padding: 16px 16px 32px 16px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .projectPageContent_verticalContainer {
+        display: flex;
+        margin-left: 0;
+        margin-top: 16px;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .projectPageContent_footerText {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        font-style: italic;
+        cursor: pointer;
+        color: #D8D8D8;
+        text-decoration: none;
+    }
+    
+    .ml {
+        margin-left: 8px;
+    }
 }

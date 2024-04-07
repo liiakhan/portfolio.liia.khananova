@@ -11,6 +11,7 @@
     padding-right: 96px;
     box-shadow: 9px 4px 38px rgba(6.26, 6, 7, 0.48);
     z-index: 8;
+    overflow: hidden;
 }
 
 .slideoutMenu_closed {
@@ -74,4 +75,40 @@
     margin: 0;
     padding: 0;
     cursor: pointer;
+}
+
+@media (max-width: 390px) {
+    .slideoutMenu_button {
+        width: 32px;
+        height: 32px;
+    }
+    .slideoutMenu_navigationBox {
+        height: auto;
+        width: 100%;
+        transition: 0.8s;
+        flex-direction: column-reverse;
+        align-items: end;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    .slideoutMenu_closed {
+        height: auto;
+        width: 100%;
+        transition: 0.8s;
+        flex-direction: column-reverse;
+        align-items: end;
+        padding: 16px;
+        box-sizing: border-box;
+        transform: translateY(-100%);
+        right: -100vw;
+    }
+    .slideoutMenu_navigationItems {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
 }

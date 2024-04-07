@@ -31,14 +31,14 @@ function ProjectPageContent () {
                 {body.map(item => {
                     return item.isImageFirst 
                         ?
-                        <div className='projectPageContent_detailUnEvent'>
+                        <div className='projectPageContent_detailUnEvent text_second'>
                             <img src={item.imageSrc} className='projectPageContent_leftImage' alt=''/>
                             <p className='projectPageContent_smallText'>
                                 {item.text}                    
                             </p>
                         </div> 
                         :
-                        <div className='projectPageContent_detailUnEvent'>
+                        <div className='projectPageContent_detailUnEvent text_first'>
                             <p className='projectPageContent_smallText'>
                                 {item.text}                    
                             </p>
