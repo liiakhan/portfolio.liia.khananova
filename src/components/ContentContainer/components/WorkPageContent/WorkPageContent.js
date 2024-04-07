@@ -38,7 +38,7 @@ function WorkPageContent () {
     useEffect(() => {
         if(wasScrolled) return
         ref.current.scroll(0, isScrolledToLeft ? ref.current.scrollTop + 1 : ref.current.scrollTop - 1 );
-        if(ref.current.scrollTop >= ref.current.scrollHeight - ref.current.offsetHeight - 5 || ref.current.scrollTop <  5 ) {
+        if(ref.current.scrollTop >= ref.current.scrollHeight - ref.current.offsetHeight - 5 || ref.current.scrollTop === 0 ) {
             setIsScrolledToLeft(prev => !prev)
             setLastScrollDistance(ref.current.scrollTop)
         }
