@@ -14,7 +14,8 @@ function WorkPageContent () {
         });
     }
     const [wasScrolled, setWasScrolled] = useState(false)
-    const [scrollDistance, setScrollDistance] = useState(0)
+    const [lastScrollDistance, setLastScrollDistance] = useState(null)
+    const [isScrolledToLeft, setIsScrolledToLeft] = useState(true)
     const ref = useRef(null)
 
     useEffect(() => {
@@ -22,7 +23,9 @@ function WorkPageContent () {
         if(!scrolledElement) return
         const callback = () => {
             setWasScrolled(true)
-            setTimeout(() => setWasScrolled(false), 30000)
+            setTimeout(() => {
+                setWasScrolled(false)
+            }, 10000)
         }
         ref.current.addEventListener('wheel', callback)
         ref.current.addEventListener('touchmove', callback)
@@ -33,11 +36,16 @@ function WorkPageContent () {
     }, [])
 
     useEffect(() => {
-        if(!wasScrolled && ref.current) {
-            ref.current.scroll(0, scrollDistance);
-            setTimeout(() => setScrollDistance(prev => prev + 1), 50)
+        if(wasScrolled) return
+        ref.current.scroll(0, isScrolledToLeft ? ref.current.scrollTop + 1 : ref.current.scrollTop - 1 );
+        if(ref.current.scrollTop >= ref.current.scrollHeight - ref.current.offsetHeight - 5 || ref.current.scrollTop <  5 ) {
+            setIsScrolledToLeft(prev => !prev)
+            setLastScrollDistance(ref.current.scrollTop)
         }
-    }, [wasScrolled, scrollDistance])
+        setTimeout(() => {
+            setLastScrollDistance(isScrolledToLeft ? ref.current.scrollTop + 1 : ref.current.scrollTop - 1)
+        }, 35)
+    }, [wasScrolled, isScrolledToLeft, lastScrollDistance])
 
     return (
         <div className='workPageContent'>
