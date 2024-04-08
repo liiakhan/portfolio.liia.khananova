@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio.liia.khananova/static/css/main.a326f8b7.css",
-    "main.js": "/portfolio.liia.khananova/static/js/main.63656edd.js",
+    "main.css": "/portfolio.liia.khananova/static/css/main.a856593a.css",
+    "main.js": "/portfolio.liia.khananova/static/js/main.140c56cf.js",
     "static/media/IMG_5527.mp4": "/portfolio.liia.khananova/static/media/IMG_5527.98090729660304649344.mp4",
+    "static/media/editorialBeatsCover.png": "/portfolio.liia.khananova/static/media/editorialBeatsCover.0bc3de63e84b5b42fe88.png",
     "static/media/editorialSeasonsCover.png": "/portfolio.liia.khananova/static/media/editorialSeasonsCover.3b24eda569535ecb5ca5.png",
-    "static/media/editorialSeasonsThird.png": "/portfolio.liia.khananova/static/media/editorialSeasonsThird.cae007202cfd7df78ba2.png",
-    "static/media/editorialSeasonsFirst.png": "/portfolio.liia.khananova/static/media/editorialSeasonsFirst.0944b8edf636520374c8.png",
+    "static/media/editorialBeatsFirst.png": "/portfolio.liia.khananova/static/media/editorialBeatsFirst.6f7e36972ee46a38a455.png",
+    "static/media/editorialBeatsSecond.png": "/portfolio.liia.khananova/static/media/editorialBeatsSecond.3faa2a9dd8b7ded98c55.png",
+    "static/media/editorialBeatsThird.png": "/portfolio.liia.khananova/static/media/editorialBeatsThird.deafe4d590a85940ac19.png",
+    "static/media/editorialSeasonsThird.png": "/portfolio.liia.khananova/static/media/editorialSeasonsThird.b21e0e87e5825781bce4.png",
+    "static/media/editorialSeasonsFirst.png": "/portfolio.liia.khananova/static/media/editorialSeasonsFirst.402979e4bfae9f079cb6.png",
     "index.html": "/portfolio.liia.khananova/index.html",
-    "main.a326f8b7.css.map": "/portfolio.liia.khananova/static/css/main.a326f8b7.css.map",
-    "main.63656edd.js.map": "/portfolio.liia.khananova/static/js/main.63656edd.js.map"
+    "main.a856593a.css.map": "/portfolio.liia.khananova/static/css/main.a856593a.css.map",
+    "main.140c56cf.js.map": "/portfolio.liia.khananova/static/js/main.140c56cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.a326f8b7.css",
-    "static/js/main.63656edd.js"
+    "static/css/main.a856593a.css",
+    "static/js/main.140c56cf.js"
   ]
 }
