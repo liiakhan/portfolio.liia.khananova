@@ -1,15 +1,26 @@
 import ArrowSquare from '../icons/ArrowSquare';
 import './UpperLine.css'
 import { useSearchParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 
 function UpperLine({ setIsNavOpen }) {
   const [searchParams, setSearchParams] = useSearchParams();
+  const [isSmall, setIsSmall] = useState(window.innerWidth <= 390)
+
   const pageName = searchParams.get("pageName");
   const openNav = () => {
     setIsNavOpen(true)
   } 
 
-  const isSmall = window.innerWidth <= 390
+  useEffect(() => {
+    const callback = () => {
+        setIsSmall(window.innerWidth <= 390)
+    }
+    visualViewport.addEventListener("resize", callback);
+    return () => {
+        visualViewport.removeEventListener("resize", callback);
+    }
+}, [])
 
   return (
     <div className="upperLine">
