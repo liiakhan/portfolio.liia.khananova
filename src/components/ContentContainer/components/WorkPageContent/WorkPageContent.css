@@ -31,6 +31,11 @@
     cursor: pointer;
 }
 
+.imgContainer {
+    position: absolute;
+    z-index: 3;
+}
+
 .flexItem {
     width: 100vh;
     position: relative;

@@ -62,7 +62,8 @@ function WorkPageContent () {
                     } = projectsData[key].imageButtonSettings
                     return (
                     <div className='flexItem' style={{height: containerWidth}} key={key}>
-                        <div style={{width: imageWidth, height: imageHeight, right: imageTop, top: imageLeft, position: 'absolute' }}
+                        <div style={{width: imageWidth, height: imageHeight, right: imageTop, top: imageLeft}}
+                        className='imgContainer'
                         onClick={selectProject}
                         data-project-name={key}
                         >
