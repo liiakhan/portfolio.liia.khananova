@@ -20,11 +20,18 @@ function UpperLine({ setIsNavOpen }) {
     return () => {
         visualViewport.removeEventListener("resize", callback);
     }
-}, [])
+  }, [])
+
+  const handleClick = () => {
+    setSearchParams(params => {
+      params.set("pageName", 'Home');
+      return params;
+    });
+  }
 
   return (
     <div className="upperLine">
-      <div className="upperLine_textConteiner">
+      <div className="upperLine_textConteiner" onClick={handleClick}>
             <p className="upperLine_name">
                 {isSmall ? 'L.K' : 'Liia Khananova'} 
             </p>

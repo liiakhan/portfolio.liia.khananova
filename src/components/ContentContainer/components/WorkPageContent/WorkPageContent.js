@@ -9,7 +9,7 @@ function WorkPageContent () {
         const projectName = ev.currentTarget.dataset.projectName
         setSearchParams(params => {
             params.set("projectName", projectName);
-            params.set("pageName", 'Projects');
+            params.set("pageName", 'Case study');
             return params;
         });
     }
@@ -60,6 +60,10 @@ function WorkPageContent () {
                         imageSrc,
                         containerWidth
                     } = projectsData[key].imageButtonSettings
+                    const {
+                        designType,
+                        name,
+                    } = projectsData[key].pageSettings
                     return (
                     <div className='flexItem' style={{height: containerWidth}} key={key}>
                         <div style={{width: imageWidth, height: imageHeight, right: imageTop, top: imageLeft}}
@@ -68,6 +72,10 @@ function WorkPageContent () {
                         data-project-name={key}
                         >
                             <img src={imageSrc} alt={imageAlt} className='img'></img>
+                            <div className='imgCurtain' >
+                                <p className='imgCurtain_designType'>{designType}</p>
+                                <p className='imgCurtain_name'>{name}</p>
+                            </div>
                         </div>   
                     </div>
                     )

@@ -16,6 +16,10 @@
 
 }
 
+.upperLine_textConteiner {
+    cursor: pointer;
+}
+
 .upperLine_name {
     font-family: "Mukta", sans-serif;
     font-size: 20px;

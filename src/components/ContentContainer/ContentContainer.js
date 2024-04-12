@@ -14,7 +14,7 @@ function ContentContainer () {
         <div className="contentContainer">
             {pageName === 'Home' && <HomePageContent />}
             {pageName === 'Work' && <WorkPageContent />}
-            {pageName === 'Projects' &&  <ProjectPageContent />}
+            {pageName === 'Case study' &&  <ProjectPageContent />}
         </div>
     ) 
 }

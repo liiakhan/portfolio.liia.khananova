@@ -27,13 +27,60 @@
     width: 100%;
     height: 100%;
     box-shadow: 9px 4px 38px rgba(6.26, 6, 7, 0.48);
-    transform: rotate(90deg);
     cursor: pointer;
+}
+
+.imgCurtain {
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    cursor: pointer;
+}
+.imgCurtain:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 16px;
+}
+
+.imgCurtain_designType, .imgCurtain_name {
+    opacity: 0;
+}
+
+.imgCurtain:hover .imgCurtain_designType {
+    color: #00FF11;
+    font-family: "Mukta", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 18px;
+    opacity: 1;
+}
+.imgCurtain:hover .imgCurtain_name {
+    color: white;
+    font-family: "GT America", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27px;
+    opacity: 1;
 }
 
 .imgContainer {
     position: absolute;
     z-index: 3;
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+.imgContainer:hover  {
+    transform: scale(1.2) rotate(90deg);
+    transition: 0.5s;
+    z-index: 10000;
 }
 
 .flexItem {
