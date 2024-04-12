@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio.liia.khananova/static/css/main.7d27eafd.css",
-    "main.js": "/portfolio.liia.khananova/static/js/main.f5cd5f80.js",
+    "main.css": "/portfolio.liia.khananova/static/css/main.13f6fca8.css",
+    "main.js": "/portfolio.liia.khananova/static/js/main.da1418fe.js",
     "static/media/IMG_5527.mp4": "/portfolio.liia.khananova/static/media/IMG_5527.98090729660304649344.mp4",
     "static/media/editorialBeatsCover.png": "/portfolio.liia.khananova/static/media/editorialBeatsCover.66589362e5e3706e7849.png",
     "static/media/editorialSeasonsCover.png": "/portfolio.liia.khananova/static/media/editorialSeasonsCover.306e9a45f65ac10c9ec9.png",
@@ -22,11 +22,11 @@
     "static/media/touchingFirst.png": "/portfolio.liia.khananova/static/media/touchingFirst.8a29ebf2d0d06d4e8d97.png",
     "static/media/touchingSecond.png": "/portfolio.liia.khananova/static/media/touchingSecond.7b0323fe1b4ac7c79981.png",
     "index.html": "/portfolio.liia.khananova/index.html",
-    "main.7d27eafd.css.map": "/portfolio.liia.khananova/static/css/main.7d27eafd.css.map",
-    "main.f5cd5f80.js.map": "/portfolio.liia.khananova/static/js/main.f5cd5f80.js.map"
+    "main.13f6fca8.css.map": "/portfolio.liia.khananova/static/css/main.13f6fca8.css.map",
+    "main.da1418fe.js.map": "/portfolio.liia.khananova/static/js/main.da1418fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d27eafd.css",
-    "static/js/main.f5cd5f80.js"
+    "static/css/main.13f6fca8.css",
+    "static/js/main.da1418fe.js"
   ]
 }
