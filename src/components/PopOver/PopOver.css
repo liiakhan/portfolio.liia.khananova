@@ -10,26 +10,28 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+.popOverPage_closeButton {
+    width: 64px;
+    height: 64px;
+    margin-left: 458px;
+    cursor: pointer;
+}
 .popOverPage {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
     background: #22232E;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     margin: 20vw;
-    padding-top: 42px;
-    padding-bottom: 42px;
-    padding-left: 36px;
-    padding-right: 36px;
-
+    padding: 42px;
+    width: 616px;
 }
 
 .popOverContentBox {
     /* position: absolute; */
     display: flex;
-    flex-direction: row;
-    width: 60vw;
-    
+    flex-direction: column;
+    width: 100%;
 }
 
 .popOverTextBox {
@@ -54,10 +56,6 @@
     color: aliceblue;
 }
 
-button {
-    width: 20px;
-}
-
 input {
     display: flex;
     padding: 10px;
@@ -79,4 +77,53 @@ input::placeholder {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.popOver_button {
+    display: block;
+    width: 128px;
+    height: 56px;
+    background-color: #00FF11;
+    border-radius: 16px;
+    color: #070706;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popOverInputBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 390px) {
+    .popOverPage_closeButton {
+        width: 64px;
+        height: 64px;
+        margin-left: auto;
+    }
+    .popOverPage {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background: #22232E;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        margin: 10vh 10vw;
+        padding: 32px;
+        width: 80vw;
+        height: 80vh;
+        box-sizing: border-box;
+    }
+    .popOverInputBox {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
+        height: 30vh;
+    }
+    .popOver_button {
+        margin-left: auto;
+    }
 }
