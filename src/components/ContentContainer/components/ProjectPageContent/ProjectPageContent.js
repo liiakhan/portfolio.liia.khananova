@@ -49,7 +49,30 @@ function ProjectPageContent () {
                 })}
 
 
-    
+                <section class="grid">
+                    <div class="imageBlock">
+                        <img src="https://picsum.photos/400?random=1" alt="" className='grid_img'/>
+                    </div>
+                    
+                    <div class="imageBlock">
+                        <img src="https://picsum.photos/400?random=2" alt="" className='grid_img'/>
+                    </div>
+                    
+                    <div class="imageBlock">
+                        <img src="https://picsum.photos/400?random=3" alt="" className='grid_img'/>
+                    </div>
+                    
+                    <div class="imageBlock">
+                        <img src="https://picsum.photos/400?random=4" alt="" className='grid_img'/>
+                    </div>
+                    
+                    <div class="imageBlock">
+                        <img src="https://picsum.photos/400?random=" alt="" className='grid_img'/>
+                    </div>
+
+                </section>
+
+
             </div> 
             <div className='projectPageContent_footer'>
                 <div className='projectPageContent_verticalContainer'>
