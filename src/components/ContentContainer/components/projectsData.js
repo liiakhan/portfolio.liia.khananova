@@ -21,7 +21,7 @@ import touchingSecond from "./images/touchingSecond.png"
 import touchingThird from "./images/touchingThird.png"
 
 import alongCover from "./images/alongCover.png"
-
+import testImg from "./images/testImg.jpeg"
 
 export const projectsData = {
         "Project name 2": {
@@ -63,7 +63,7 @@ export const projectsData = {
                 // },
             ],
             gridImages: [
-                touchingThird,
+                testImg,
                 touchingThird,
                 touchingThird,
                 touchingThird,
