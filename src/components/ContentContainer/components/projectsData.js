@@ -61,7 +61,15 @@ export const projectsData = {
                 //     imageSrc: 'https://picsum.photos/400?random=5',
                 //     isImageFirst: true,
                 // },
+            ],
+            gridImages: [
+                touchingThird,
+                touchingThird,
+                touchingThird,
+                touchingThird,
+                touchingThird,
             ]    
+
         },
         imageButtonSettings: {
             imageWidth: '40vh',
@@ -126,7 +134,14 @@ export const projectsData = {
                 //     imageSrc: 'https://picsum.photos/400?random=5',
                 //     isImageFirst: true,
                 // },
-            ]    
+            ],
+            gridImages: [
+                alongCover,
+                alongCover,
+                alongCover,
+                alongCover,
+                alongCover,
+            ]      
         },
         imageButtonSettings: {
             imageWidth: '60vh',
