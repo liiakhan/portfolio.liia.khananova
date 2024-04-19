@@ -126,6 +126,7 @@
 }
 
 .grid {
+    margin-top: 64px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 16px;
@@ -174,7 +175,7 @@
   .imageBlock:nth-child(1) {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    background-color: #00FF11;
+    background-color: #C8FFBF;
     color: #ffffff;
   }
   
@@ -190,7 +191,7 @@
  .imageBlock:nth-child(3) {
     grid-column: 4 / 5;
     grid-row: 1 / 3;
-    background-color: #00FF11;
+    background-color: #C8FFBF;
   }
   
   .imageBlock:nth-child(4) {
@@ -207,13 +208,14 @@
     grid-column: 2 / 4;
     grid-row: 2 / 3;
       
-    background-color: #00FF11;
+    background-color: #C8FFBF;
     margin: 0;
     padding: 0;
   }
   
   @media (max-width: 900px) {
     .grid {
+      margin-top: 64px;
       grid-template-columns: 1fr 1fr;
     }
     .imageBlock:nth-child(2) {
@@ -237,6 +239,7 @@
     .grid {
       display: flex;
       flex-direction: column;
+      margin-top: 64px;
     }
   }
     
